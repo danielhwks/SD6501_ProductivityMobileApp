@@ -22,5 +22,20 @@
         android:id="@+id/nav_notes"
         android:name="com.example.assignment_1_study_app.ui.notes.NotesFragment"
         android:label="@string/menu_notes"
-        tools:layout="@layout/fragment_notes" />
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_nav_notes_to_nav_edit_notes"
+            app:destination="@id/nav_edit_notes" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_edit_notes"
+        android:name="com.example.assignment_1_study_app.ui.notes.NotesEditFragment"
+        android:label="@string/menu_edit_notes"
+        tools:layout="@layout/fragment_edit_notes">
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue="Untitled" />
+    </fragment>
 </navigation>
