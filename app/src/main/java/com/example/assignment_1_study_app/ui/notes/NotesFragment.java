@@ -38,16 +38,6 @@ public class NotesFragment extends Fragment implements RecyclerViewAdapter.OnNot
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity().getApplicationContext()));
 
         FloatingActionButton btn = root.findViewById(R.id.noteAdd);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                NavController controller = Navigation.findNavController(v);
-                //Bundle args = new Bundle();
-                //args.putString("title", "Test");
-                //controller.navigate(R.id.nav_edit_notes, args);
-                controller.navigate(R.id.nav_edit_notes);
-            }
-        });
 
         return root;
     }

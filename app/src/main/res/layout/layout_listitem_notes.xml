@@ -3,12 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="20dp"
-    android:id="@+id/parent_layout">
+    android:id="@+id/parent_layout"
+    android:background="@color/colorSoft"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/listitem_notes_title"
-        android:text="Canada" />
+        android:text="Canada"
+        android:textSize="20dp"/>
 
 </RelativeLayout>
