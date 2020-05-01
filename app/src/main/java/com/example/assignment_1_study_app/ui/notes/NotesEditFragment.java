@@ -60,12 +60,6 @@ public class NotesEditFragment extends Fragment {
         return root;
     }
 
-    public void onStop() {
-        super.onStop();
-        InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.hideSoftInputFromWindow(editContent.getWindowToken(), 0);
-    }
-
     private void saveToFile(String filename, String content) {
         this.note.delete();
         File path = getContext().getFilesDir();

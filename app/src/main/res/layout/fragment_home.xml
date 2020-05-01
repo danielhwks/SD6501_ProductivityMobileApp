@@ -41,6 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnShortcutTimer"
         tools:layout_editor_absoluteX="10dp" />
 
+    <!-- Hidden for future assignments.
     <Button
         android:id="@+id/btnShortcutFlashcards"
         android:layout_width="match_parent"
@@ -70,4 +71,5 @@
         app:layout_constraintTop_toBottomOf="@+id/btnShortcutTodo"
         tools:layout_editor_absoluteX="11dp"
         android:visibility="gone" />
+    -->
 </androidx.constraintlayout.widget.ConstraintLayout>
