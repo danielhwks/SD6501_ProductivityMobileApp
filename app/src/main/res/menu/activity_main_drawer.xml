@@ -16,5 +16,13 @@
             android:id="@+id/nav_notes"
             android:icon="@android:drawable/ic_menu_edit"
             android:title="@string/menu_notes" />
+        <item
+            android:id="@+id/nav_flashcards"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="@string/menu_flashcards" />
+        <item
+            android:id="@+id/nav_todo"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="@string/menu_todo" />
     </group>
 </menu>
