@@ -25,6 +25,8 @@ public class HomeFragment extends Fragment {
         final TextView textView = root.findViewById(R.id.text_home);
         final Button btnShortcutTimer = root.findViewById(R.id.btnShortcutTimer);
         final Button btnShortcutNotes = root.findViewById(R.id.btnShortcutNotes);
+        final Button btnShortcutFlashcards = root.findViewById(R.id.btnShortcutFlashcards);
+        final Button btnShortcutTodo = root.findViewById(R.id.btnShortcutTodo);
 
         textView.setText("What would you like to do?");
 
@@ -40,6 +42,20 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 NavController controller = Navigation.findNavController(v);
                 controller.navigate(R.id.nav_notes);
+            }
+        });
+        btnShortcutFlashcards.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavController controller = Navigation.findNavController(v);
+                controller.navigate(R.id.nav_decks);
+            }
+        });
+        btnShortcutTodo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavController controller = Navigation.findNavController(v);
+                controller.navigate(R.id.nav_todo);
             }
         });
 

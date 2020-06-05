@@ -5,9 +5,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.todo.TodoFragment">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_todo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Todo" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:id="@+id/fabAddTodo"
+        android:src="@android:drawable/ic_menu_add" />
 
 </RelativeLayout>

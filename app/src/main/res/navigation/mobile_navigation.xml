@@ -40,14 +40,60 @@
     </fragment>
 
     <fragment
-        android:id="@id/nav_flashcards"
+        android:id="@id/nav_decks"
         android:name="com.example.assignment_1_study_app.ui.flashcards.FlashCardsFragment"
         android:label="@string/menu_flashcards"
-        tools:layout="@layout/fragment_flashcards" />
+        tools:layout="@layout/fragment_flashcards" >
+        <action
+            android:id="@+id/action_nav_decks_to_nav_edit_deck"
+            app:destination="@id/nav_edit_deck" />
+    </fragment>
 
     <fragment
-        android:id="@id/nav_todo"
+        android:id="@+id/nav_edit_deck"
+        android:name="com.example.assignment_1_study_app.ui.flashcards.FlashCardsDeckEditFragment"
+        android:label="@string/menu_edit_deck"
+        tools:layout="@layout/fragment_flashcards_cardsview">
+        <argument
+            android:name="id"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_nav_edit_deck_to_nav_edit_card"
+            app:destination="@id/nav_edit_card" />
+        <action
+            android:id="@+id/action_nav_edit_deck_to_nav_play_deck"
+            app:destination="@id/nav_play_deck" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_play_deck"
+        android:name="com.example.assignment_1_study_app.ui.flashcards.FlashCardsDeckPlayFragment"
+        android:label="@string/menu_play_deck"
+        tools:layout="@layout/fragment_play_deck">
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_edit_card"
+        android:name="com.example.assignment_1_study_app.ui.flashcards.FlashCardsCardEditFragment"
+        android:label="@string/menu_edit_card"
+        tools:layout="@layout/fragment_edit_card">
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_todo"
         android:name="com.example.assignment_1_study_app.ui.todo.TodoFragment"
         android:label="@string/menu_todo"
         tools:layout="@layout/fragment_todo" />
+
+    <fragment
+        android:id="@+id/nav_edit_todo"
+        android:name="com.example.assignment_1_study_app.ui.todo.TodoEditFragment"
+        android:label="@string/menu_edit_todo"
+        tools:layout="@layout/fragment_edit_todo" />
 </navigation>

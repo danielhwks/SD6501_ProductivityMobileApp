@@ -12,5 +12,9 @@
     <string name="menu_notes">Notes</string>
     <string name="menu_edit_notes">Edit Note</string>
     <string name="menu_flashcards">Flash Cards</string>
+    <string name="menu_edit_deck">Edit Deck</string>
+    <string name="menu_edit_card">Edit Card</string>
+    <string name="menu_play_deck">Play Deck</string>
     <string name="menu_todo">Todo</string>
+    <string name="menu_edit_todo">Edit Todo</string>
 </resources>

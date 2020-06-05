@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:id="@+id/parent_layout"
+    android:background="@color/colorSoft"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listitem_cards_title"
+        android:text="?"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

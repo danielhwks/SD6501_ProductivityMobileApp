@@ -41,7 +41,6 @@
         app:layout_constraintTop_toBottomOf="@+id/btnShortcutTimer"
         tools:layout_editor_absoluteX="10dp" />
 
-    <!-- Hidden for future assignments.
     <Button
         android:id="@+id/btnShortcutFlashcards"
         android:layout_width="match_parent"
@@ -49,8 +48,7 @@
         android:layout_marginHorizontal="10dp"
         android:text="Practice Flashcards"
         app:layout_constraintTop_toBottomOf="@+id/btnShortcutNotes"
-        tools:layout_editor_absoluteX="10dp"
-        android:visibility="gone" />
+        tools:layout_editor_absoluteX="10dp" />
 
     <Button
         android:id="@+id/btnShortcutTodo"
@@ -59,9 +57,9 @@
         android:layout_marginHorizontal="10dp"
         android:text="View ToDo items"
         app:layout_constraintTop_toBottomOf="@+id/btnShortcutFlashcards"
-        tools:layout_editor_absoluteX="16dp"
-        android:visibility="gone" />
+        tools:layout_editor_absoluteX="16dp"/>
 
+    <!--
     <Button
         android:id="@+id/btnShortcutScheduler"
         android:layout_width="match_parent"
