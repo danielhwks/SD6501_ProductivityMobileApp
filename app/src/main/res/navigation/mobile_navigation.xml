@@ -96,4 +96,16 @@
         android:name="com.example.assignment_1_study_app.ui.todo.TodoEditFragment"
         android:label="@string/menu_edit_todo"
         tools:layout="@layout/fragment_edit_todo" />
+
+    <fragment
+        android:id="@+id/nav_timetable"
+        android:name="com.example.assignment_1_study_app.ui.timetable.TimetableFragment"
+        android:label="@string/menu_timetable"
+        tools:layout="@layout/fragment_timetable" />
+
+    <fragment
+        android:id="@+id/nav_edit_timetable"
+        android:name="com.example.assignment_1_study_app.ui.timetable.TimetableEditFragment"
+        android:label="@string/menu_edit_timetable"
+        tools:layout="@layout/fragment_edit_timetable" />
 </navigation>

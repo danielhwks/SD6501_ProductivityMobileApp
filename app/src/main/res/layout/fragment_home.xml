@@ -59,15 +59,13 @@
         app:layout_constraintTop_toBottomOf="@+id/btnShortcutFlashcards"
         tools:layout_editor_absoluteX="16dp"/>
 
-    <!--
     <Button
-        android:id="@+id/btnShortcutScheduler"
+        android:id="@+id/btnShortcutTimetable"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginHorizontal="10dp"
-        android:text="Check Schedule"
+        android:text="Check Timetable"
         app:layout_constraintTop_toBottomOf="@+id/btnShortcutTodo"
-        tools:layout_editor_absoluteX="11dp"
-        android:visibility="gone" />
-    -->
+        tools:layout_editor_absoluteX="11dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

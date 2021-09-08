@@ -17,4 +17,6 @@
     <string name="menu_play_deck">Play Deck</string>
     <string name="menu_todo">Todo</string>
     <string name="menu_edit_todo">Edit Todo</string>
+    <string name="menu_timetable">Timetable</string>
+    <string name="menu_edit_timetable">Edit Timetable</string>
 </resources>

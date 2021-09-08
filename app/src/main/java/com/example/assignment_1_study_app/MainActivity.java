@@ -1,9 +1,12 @@
 package com.example.assignment_1_study_app;
 
+import android.bluetooth.BluetoothClass;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
 
+import com.example.assignment_1_study_app.misc.DeviceBootReceiver;
+import com.example.assignment_1_study_app.misc.NotificationHelper;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -23,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        NotificationHelper.createNotificationChannel(getApplicationContext());
+
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -30,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationView navigationView = findViewById(R.id.nav_view);
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_timer, R.id.nav_notes, R.id.nav_decks, R.id.nav_todo)
+                R.id.nav_home, R.id.nav_timer, R.id.nav_notes, R.id.nav_decks, R.id.nav_todo, R.id.nav_timetable)
                 .setDrawerLayout(drawer)
                 .build();
 
